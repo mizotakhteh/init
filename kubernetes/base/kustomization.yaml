@@ -1,0 +1,6 @@
+namespace: mizotakhteh
+
+resources:
+  - namespace.yaml
+  - github-sa.yaml
+  - mizotakhteh-crt.yaml
