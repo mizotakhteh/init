@@ -9,7 +9,7 @@ kubectl apply -k kubernetes/overlays/homesys
 ## TODO: Deploy mproduct certification
 
 ## Get secret name
-SECRET_NAME=$(kubectl get serviceaccount -n $NAMESPACE $SERVICE_ACCOUNT_NAME -o jsonpath='{.secrets[0].name}')
+SECRET_NAME=$SERVICE_ACCOUNT_NAME-token
 
 ## Get token
 TOKEN=$(kubectl get secret -n $NAMESPACE $SECRET_NAME -o jsonpath='{.data.token}')

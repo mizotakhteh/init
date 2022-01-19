@@ -23,7 +23,7 @@ This command:
 - Create a service account on the *mizotakhteh* namespace called ***github***.
 - Binding a cluster admin role to *github* service account (limited access just to this namespace).
 - Create a Certificate for ***api.mizotakhteh.ml*** and keep it into ***mizotakhteh-tls*** secret.
-- Print encrypted and decrypted Github token.
+- Create a token for github service account and print encrypted and decrypted github token.
 
 > Use decrypted token to create a CI/CD variable named ***GH_SA_TOKEN*** in the [mizotakhteh actions secrets](https://github.com/organizations/mizotakhteh/settings/secrets/actions).
 
